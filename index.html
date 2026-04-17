@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>RSCOE Mathematics Club (RMC) | JSPM's Rajarshi Shahu College of Engineering, Pune</title>
+    <meta name="title" content="RSCOE Mathematics Club (RMC) | JSPM Pune">
+    <meta name="description" content="Official website of the RSCOE Mathematics Club (RMC) at JSPM's Rajarshi Shahu College of Engineering, Tathawade, Pune. Join us for math events, expert talks, AI workshops, and more.">
+    <meta name="keywords" content="RSCOE Mathematics Club, RMC RSCOE, JSPM Math Club, Rajarshi Shahu College Mathematics, RMC Pune, JSPM RSCOE, Mathematics Club Pune, Engineering Mathematics Club, Tathawade Pune">
+    <meta name="author" content="RSCOE Mathematics Club">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rmcwebsite10.web.app/">
+    <meta property="og:title" content="RSCOE Mathematics Club (RMC) | JSPM Pune">
+    <meta property="og:description" content="Official website of the RSCOE Mathematics Club. Events, workshops, expert talks and more at JSPM's Rajarshi Shahu College of Engineering, Pune.">
+    <meta property="og:image" content="https://rmcwebsite10.web.app/img/logo.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:site_name" content="RMC RSCOE">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rmcwebsite10.web.app/">
+    <meta name="twitter:title" content="RSCOE Mathematics Club (RMC) | JSPM Pune">
+    <meta name="twitter:description" content="Official website of the RSCOE Mathematics Club at JSPM's Rajarshi Shahu College of Engineering, Pune.">
+    <meta name="twitter:image" content="https://rmcwebsite10.web.app/img/logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rmcwebsite10.web.app/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="apple-touch-icon" href="./img/logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RSCOE Mathematics Club",
+        "alternateName": ["RMC", "RMC RSCOE", "JSPM Math Club"],
+        "url": "https://rmcwebsite10.web.app",
+        "logo": "https://rmcwebsite10.web.app/img/logo.png",
+        "description": "Official Mathematics Club of JSPM's Rajarshi Shahu College of Engineering, Tathawade, Pune",
+        "email": "rmcshg1230@gmail.com",
+        "telephone": "+911203597255",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "S.No. 80, Tathawade",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "postalCode": "411033",
+            "addressCountry": "IN"
+        },
+        "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "JSPM's Rajarshi Shahu College of Engineering",
+            "url": "https://rscoe.edu.in"
+        },
+        "sameAs": [
+            "https://www.instagram.com/rscoe_mathematics.club",
+            "https://www.linkedin.com/company/rscoe-mathematics-club/"
+        ]
+    }
+    </script>
+
+    <link rel="preload" as="video" href="img/rmcbackground.mp4">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logos-left">
+            <img src="./img/jspm..png" alt="JSPM Rajarshi Shahu College of Engineering Logo" class="college-logo-left" fetchpriority="high">
+            <img src="./img/logo.png" alt="RSCOE Mathematics Club Logo" class="club-logo-left">
+        </div>
+        <div class="college-name">
+            <div class="college-name-small">JSPM's Rajarshi Shahu College of Engineering, Tathawade, Pune</div>
+            <div class="college-name-big">RSCOE Mathematics Club</div>
+        </div>
+        <div class="logos-right">
+            <img src="./img/rsmc.png" alt="RSCOE College Logo" class="college-logo-right" fetchpriority="high">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- ========== ANNOUNCEMENT BANNER ========== -->
+    <div id="announcementBanner" class="announcement-banner" style="display:none;">
+        <div class="announcement-content" id="announcementContent"></div>
+        <button class="announcement-close" id="announcementClose" onclick="dismissBanner()">&times;</button>
+    </div>
+
+    <div class="video-bg">
+        <video autoplay muted loop playsinline preload="metadata">
+            <source src="img/rmcbackground.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <img src="img/logo.png" alt="RSCOE Mathematics Club Logo" class="logo">
+        </div>
+    </div>
+
+    <nav class="side-menu" id="sideMenu">
+        <a href="#home" onclick="toggleMenu()">HOME</a>
+        <a href="#about" onclick="toggleMenu()">ABOUT</a>
+        <a href="#history" onclick="toggleMenu()">HISTORY OF MATHEMATICS</a>
+        <a href="#activities" onclick="toggleMenu()">ACTIVITIES</a>
+        <a href="#events" onclick="toggleMenu()">EVENTS</a>
+        <a href="#upcoming-events" onclick="toggleMenu()">UPCOMING EVENTS</a>
+        <a href="#members" onclick="toggleMenu()">MEMBERS</a>
+        <a href="#register" onclick="toggleMenu()">REGISTER</a>
+        <a href="certificate.html" onclick="toggleMenu()">CERTIFICATES</a>
+        <a href="#contact-us" onclick="toggleMenu()">CONTACT US</a>
+    </nav>
+
+    <div class="scroll-up" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        <span></span>
+    </div>
+
+    <div class="content">
+
+        <section class="about-section" id="about" itemscope itemtype="https://schema.org/AboutPage">
+            <h2 itemprop="name">ABOUT US</h2>
+            <p>
+                The Mathematics Club was founded by two students whose curiosity
+                led them to an interstate competition, where they represented Pune
+                as the only engineering participants. Their experience and the
+                appreciation received from the panel inspired the question, "Why not others?"
+                Collaboration with faculty members during early event planning naturally
+                evolved into the formal establishment of the club. Today, the
+                club is dedicated exclusively to pure mathematics and guided by
+                the motto "Apply and Innovate."
+            </p>
+        </section>
+
+        <section class="history-section" id="history">
+            <h2>HISTORY OF MATHEMATICS</h2>
+            <h4>Aryabhata (476-550 CE)</h4>
+            <p>Aryabhata was one of the earliest Indian mathematicians and astronomers. Wrote the famous book
+                Aryabhatiya. Calculated value of π(pi) accurately. Explained Earth rotates on its axis. Developed
+                methods for solving quadratic equations</p>
+            <h4>Brahmagupta (598-668 CE)</h4>
+            <p>Brahmagupta made major contributions to algebra. Wrote Brahmasphutasiddhanta. First to give rules for
+                zero and negative numbers. Worked on quadratic equations</p>
+            <h4>Bhaskara II (1114-1185)</h4>
+            <p>Bhaskara II, also known as Bhaskaracharya, was a great mathematician and astronomer. He wrote the famous
+                mathematics book Lilavati and made important contributions to algebra, arithmetic, and early concepts of
+                calculus. He also explained ideas related to gravity long before Isaac Newton.</p>
+            <h4>Madhava of Sangamagrama (1340-1425)</h4>
+            <p>Madhava of Sangamagrama founded the Kerala School of Mathematics. He developed infinite series for sine,
+                cosine, and π, and his work later influenced the development of calculus.</p>
+            <h4>Srinivasa Ramanujan (1887-1920)</h4>
+            <p>Srinivasa Ramanujan was a self-taught mathematical genius from Tamil Nadu. He made remarkable
+                contributions to number theory, infinite series, and continued fractions, and collaborated with G. H.
+                Hardy at University of Cambridge. He is known for concepts like the Ramanujan Prime and the Ramanujan
+                Theta Function, and in India, National Mathematics Day is celebrated on his birthday (22 December).</p>
+            <h4>C. R. Rao (1920-2023)</h4>
+            <p>C. R. Rao was a world-famous statistician known for the Cramer-Rao Bound. He made major contributions
+                to statistical theory and was awarded India's Padma Vibhushan.</p>
+            <h4>Harish-Chandra (1923-1983)</h4>
+            <p>Harish-Chandra worked in representation theory and algebra. He made important contributions to harmonic
+                analysis, and the Harish-Chandra Research Institute is named after him.</p>
+            <h4>Shakuntala Devi (1929-2013)</h4>
+            <p>Shakuntala Devi was known as the "Human Computer." She could solve complex calculations mentally, entered
+                the Guinness World Records, and actively promoted mathematics education.</p>
+            <h4>Manjul Bhargava (1974-Present)</h4>
+            <p>Manjul Bhargava is a modern Indian-origin mathematician. He is a professor at Princeton University, won
+                the Fields Medal in 2014, and works in number theory.</p>
+        </section>
+
+        <section class="activity-section" id="activities">
+            <h2>ACTIVITIES</h2>
+            <h4>AI WORKSHOP</h4>
+            <p>RMC (RSCOE Mathematics Club) hosts guest lectures and many student led lectures on machine learning and
+                application of pure mathematics. Mentors provided a detailed and beginner friendly introduction to ML
+                and how it's used. It provided students with a meaningful opportunity to connect mathematical theory
+                with modern, applied problem-solving.</p>
+            <div class="activities-grid">
+                <div class="activity-card1"><img src="img/aiml1.jpeg" alt="AI Workshop at RMC Mathematics Club" loading="lazy"></div>
+                <div class="activity-card1"><img src="img/aiml2.jpeg" alt="Machine Learning session by RMC" loading="lazy"></div>
+                <div class="activity-card">
+                    <video autoplay muted loop playsinline preload="none" loading="lazy">
+                        <source src="img/aiml.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <h4>QUIZ & PUZZLE DAY</h4>
+            <p>Maths Quiz & Puzzles Day is a weekly activity organized by the Maths Club to make learning mathematics
+                more engaging and enjoyable. It helps students improve their logical thinking, analytical ability, and
+                problem-solving skills.</p>
+            <h5>FOR EXAMPLES:</h5>
+            <div class="activities-grid">
+                <div class="activity-card1"><img src="./img/p1.jpeg" alt="Math Quiz and Puzzle event by RMC" loading="lazy"></div>
+                <div class="activity-card1"><img src="./img/p3.jpeg" alt="Students solving math puzzles at RMC event" loading="lazy"></div>
+                <div class="activity-card"><img src="./img/p2.jpeg" alt="Mathematics puzzle competition at RSCOE" loading="lazy"></div>
+            </div>
+            <h4>RESEARCH AND LEARNING</h4>
+            <div class="activities-grid">
+                <div class="activity-card1"><img src="./img/A2.jpeg" alt="Mathematics research activity at RMC" loading="lazy"></div>
+                <div class="activity-card1"><img src="./img/A3.jpeg" alt="Students at RMC Mathematics Club research session" loading="lazy"></div>
+                <div class="activity-card"><img src="./img/A1.jpeg" alt="Research and learning session at RSCOE Mathematics Club" loading="lazy"></div>
+            </div>
+        </section>
+
+        <!-- ========== REDESIGNED EVENTS SECTION ========== -->
+        <section class="events-section" id="events" itemscope itemtype="https://schema.org/Event">
+            <div class="events-header">
+                <div class="events-label">OUR EVENTS</div>
+                <h2>MOMENTS THAT MATTER</h2>
+                <p class="events-subtitle">Explore the milestones and activities that define the RMC journey</p>
+            </div>
+
+            <div class="events-ticker-bar">
+                <span class="ticker-dot"></span>
+                <span class="ticker-text" id="tickerText">NEXT EVENT COMING SOON STAY TUNED</span>
+            </div>
+
+            <div class="events-arena">
+                <!-- Featured card (large) -->
+                <div class="event-featured" id="featuredCard">
+                    <div class="event-featured-img-wrap">
+                        <img id="featuredImg" src="./img/2026.jpeg" alt="Event" loading="lazy">
+                        <div class="event-featured-badge" id="featuredBadge">FEATURED</div>
+                        <div class="event-featured-overlay">
+                            <span class="event-featured-num" id="featuredNum">01</span>
+                        </div>
+                    </div>
+                    <div class="event-featured-info">
+                        <div class="event-meta-row">
+                            <span class="event-tag" id="featuredTag">Technical</span>
+                            <span class="event-date" id="featuredDate">2026</span>
+                        </div>
+                        <h3 class="event-featured-title" id="featuredTitle">Digital Treasure Hunt</h3>
+                        <p class="event-featured-desc" id="featuredDesc">
+                            We contributed as event coordinators to Cyber Heist, a technical event organized by the
+                            Department of Engineering Sciences and Humanities, supporting the planning and execution of
+                            all three rounds. Our responsibilities included framing and curating MCQ questions for Round
+                            1, designing and validating debugging challenges for Round 2, and coordinating the Real Hunt
+                            (treasure hunt) in Round 3 by assisting with logistics and execution.
+                        </p>
+                        <div class="event-featured-footer">
+                            <div class="event-stat">
+                                <span class="stat-num" id="featuredStat">3</span>
+                                <span class="stat-label">Rounds</span>
+                            </div>
+                            <div class="event-stat">
+                                <span class="stat-num" id="featuredStat2">50+</span>
+                                <span class="stat-label">Participants</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thumbnail rail -->
+                <div class="events-rail">
+                    <div class="rail-label">ALL EVENTS</div>
+                    <div class="rail-cards" id="railCards"></div>
+                    <div class="rail-nav">
+                        <button class="rail-btn" id="prevBtn" onclick="prevEvent()">&#8592;</button>
+                        <div class="rail-progress" id="railProgress"></div>
+                        <button class="rail-btn" id="nextBtn" onclick="nextEvent()">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats bar -->
+            <div class="events-stats-bar">
+                <div class="es-stat"><span class="es-num">3+</span><span class="es-label">Events Hosted</span></div>
+                <div class="es-divider"></div>
+                <div class="es-stat"><span class="es-num">200+</span><span class="es-label">Participants</span></div>
+                <div class="es-divider"></div>
+                <div class="es-stat"><span class="es-num">3</span><span class="es-label">Years Active</span></div>
+                <div class="es-divider"></div>
+                <div class="es-stat"><span class="es-num">∞</span><span class="es-label">Passion for Math</span></div>
+            </div>
+        </section>
+        <!-- ========== END EVENTS SECTION ========== -->
+
+        <!-- ========== UPCOMING EVENTS (PUBLIC) ========== -->
+        <section class="upcoming-section" id="upcoming-events">
+            <div class="upcoming-header">
+                <div class="upcoming-label">COMING SOON</div>
+                <h2>UPCOMING EVENTS</h2>
+                <p class="upcoming-subtitle">Don't miss out! Register before it's too late!</p>
+            </div>
+            <div class="upcoming-cards" id="upcomingCards">
+                <!-- Dynamically populated from localStorage -->
+            </div>
+        </section>
+        <!-- ========== END UPCOMING EVENTS ========== -->
+
+        <!-- ========== MEMBERS PREVIEW SECTION ========== -->
+        <section class="members-section" id="members">
+            <div class="members-preview-header">
+                <div class="members-preview-label">OUR TEAM</div>
+                <h2>CLUB MEMBERS</h2>
+                <p class="members-preview-subtitle">The minds behind RMC. Click the button to see the Faculty & Student
+                    leaders</p>
+            </div>
+
+            <div class="btn-container">
+                <a href="members.html" target="_blank" class="btn">VIEW ALL MEMBERS</a>
+            </div>
+        </section>
+
+        <section class="register-section" id="register">
+            <h2>ENTER IN RMC EVENT</h2>
+            <div class="btn-container">
+                <a href="ragister.html" target="_blank" class="btn">REGISTER NOW</a>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-us" itemscope itemtype="https://schema.org/ContactPage">
+            <div class="contact-header">
+                <h2>CONTACT US</h2>
+                <p class="contact-subtitle">Get in touch with us. We'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-cards-grid">
+                <!-- Phone Card -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class='bx bxs-phone'></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p class="contact-card-label">Call us anytime</p>
+                    <a href="tel:+911234567890" class="contact-card-link">
+                        +91 1203597255
+                    </a>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class='bx bxl-gmail'></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p class="contact-card-label">Send us a message</p>
+                    <a href="mailto:maths_club@jspmrscoe.edu.in" class="contact-card-link">
+                        maths_club@jspmrscoe.edu.in
+                    </a>
+                </div>
+
+                <!-- Instagram Card -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class='bx bxl-instagram'></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p class="contact-card-label">Follow us on social media</p>
+                    <a href="https://www.instagram.com/rscoe_mathematics.club?igsh=MTgxMTk3NDJ4aHhoMA==" target="_blank"
+                        class="contact-card-link">
+                        @rscoe_mathematics.club
+                    </a>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class='bx bxl-linkedin'></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p class="contact-card-label">Connect with us</p>
+                    <a href="https://www.linkedin.com/company/rscoe-mathematics-club/" target="_blank"
+                        class="contact-card-link">
+                        rscoe mathematics club
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="img/logo.png" alt="RSCOE Mathematics Club Logo" class="footer-logo">
+                    <div>
+                        <h3>RSCOE Mathematics Club</h3>
+                        <p>JSPM's Rajarshi Shahu College of Engineering, Tathawade, Pune</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#events">Events</a>
+                    <a href="ragister.html">Register</a>
+                    <a href="certificate.html">Certificates</a>
+                    <a href="members.html">Members</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/rscoe_mathematics.club?igsh=MTgxMTk3NDJ4aHhoMA==" target="_blank" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/company/rscoe-mathematics-club/" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="mailto:maths_club@jspmrscoe.edu.in" title="Email"><i class='bx bxl-gmail'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024–2026 RSCOE Mathematics Club. All rights reserved.</p>
+                <p class="footer-tagline">Apply and Innovate — Driven by Mathematics</p>
+            </div>
+        </footer>
+
+        <!-- Firebase SDK -->
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+            import { getDatabase, ref, set, get, remove, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyC5JKcHWc9N7OcH57vFVxF5gBHxKfsgjSw",
+                authDomain: "rmcwebsite10.firebaseapp.com",
+                databaseURL: "https://rmcwebsite10-default-rtdb.asia-southeast1.firebasedatabase.app",
+                projectId: "rmcwebsite10",
+                storageBucket: "rmcwebsite10.firebasestorage.app",
+                messagingSenderId: "731012572422",
+                appId: "1:731012572422:web:f1cc2692e7236f600daa87"
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const db = getDatabase(app);
+            window._firebaseDB = db;
+            window._firebaseRef = ref;
+            window._firebaseSet = set;
+            window._firebaseGet = get;
+            window._firebaseRemove = remove;
+            window._firebaseOnValue = onValue;
+            window._firebaseReady = true;
+            window.dispatchEvent(new Event('firebaseReady'));
+        </script>
+        <script src="js/firebase-db.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
